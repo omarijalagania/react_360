@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/static/js/main.ca9ba2d0.chunk.js",
+    "main.js.map": "/static/js/main.ca9ba2d0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c894554a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c894554a.js.map",
+    "static/css/2.8f0d842b.chunk.css": "/static/css/2.8f0d842b.chunk.css",
+    "static/js/2.7154b4e8.chunk.js": "/static/js/2.7154b4e8.chunk.js",
+    "static/js/2.7154b4e8.chunk.js.map": "/static/js/2.7154b4e8.chunk.js.map",
+    "static/js/3.245edadb.chunk.js": "/static/js/3.245edadb.chunk.js",
+    "static/js/3.245edadb.chunk.js.map": "/static/js/3.245edadb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.8f0d842b.chunk.css.map": "/static/css/2.8f0d842b.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.7154b4e8.chunk.js.LICENSE.txt": "/static/js/2.7154b4e8.chunk.js.LICENSE.txt",
+    "static/media/pannellum.css": "/static/media/sprites.c08944fe.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c894554a.js",
+    "static/css/2.8f0d842b.chunk.css",
+    "static/js/2.7154b4e8.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.ca9ba2d0.chunk.js"
+  ]
+}
