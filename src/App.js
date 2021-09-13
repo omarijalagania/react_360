@@ -13,13 +13,6 @@ function App() {
     hotSpotDiv.appendChild(image);
   }
 
-  <Pannellum.Hotspot
-   type="custom"
-   pitch={12.41}
-   yaw={117.76}
-   tooltip={hotspotIcon}
-   name="image info"
-/>
   
   return (
     <div>
