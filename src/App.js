@@ -19,7 +19,7 @@ function App() {
       <Pannellum
   width="100%"
   height="500px"
-  image={'/image/timothy-oldfield-luufnHoChRU-unsplash.jpg'}
+  image={'/image/PANO_20160611_163006.jpg'}
   pitch={10}
   yaw={180}
   hfov={110}
