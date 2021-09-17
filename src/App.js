@@ -1,39 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Pannellum } from "pannellum-react";
-
 function App() {
+  const image1 = "/image/PANO_20160611_163006.jpg";
+  const image23 = "/image/sebastian-astecker-NaEDImEQXVw-unsplash.jpg";
+  const [image2, setImage2] = useState({
+    mediaPhoto: image1,
+    test: false,
+  });
+  const hanldeClickImage = (evt, args) =>
+    setImage2({
+      mediaPhoto: image23,
+      test: false,
+    });
 
-  const hotspotIcon = (hotSpotDiv) => {
-    const image = document.createElement('img');
-    image.classList.add('image');
-    image.setAttribute('width', '30');
-    image.setAttribute('height', '30');
-    image.setAttribute('src',    'https://img.icons8.com/material/4ac144/256/camera.png');
-    hotSpotDiv.appendChild(image);
-  }
-
-  
   return (
     <div>
       <Pannellum
-  width="100%"
-  height="500px"
-  image={'/image/PANO_20160611_163006.jpg'}
-  pitch={10}
-  yaw={180}
-  hfov={110}
-  autoLoad
-  showZoomCtrl={false}
->
-  <Pannellum.Hotspot
-    type="custom"
-    pitch={12.41}
-    yaw={117.76}
-    handleClick={(evt, name) => console.log(name)}
-    name="image info"
-  />
-</Pannellum>
+        width="70%"
+        height="500px"
+        image={image2.mediaPhoto}
+        pitch={10}
+        yaw={180}
+        hfov={110}
+        autoLoad
+        showZoomCtrl={false}
+        hotspotDebug={false}
+      >
+        <Pannellum.Hotspot
+          type="custom"
+          pitch={12.41}
+          yaw={50.76}
+          handleClick={(evt, args) => hanldeClickImage(evt, args)}
+        />
+      </Pannellum>
+      <button
+        onClick={() => {
+          setImage2({ test: true, mediaPhoto: image1 });
+        }}
+      >
+        Go back
+      </button>
     </div>
   );
 }
